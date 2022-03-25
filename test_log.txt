@@ -1,0 +1,791 @@
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ gcc -o main main.c
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 7 # of R: 10
+number of resource unit
+11 0 8 13 1 17 19 15 9 4 
+request
+1 0 0 3 1 4 0 1 3 0 
+1 0 1 8 0 8 8 13 1 1 
+1 0 7 5 0 5 1 9 5 0 
+3 0 0 6 0 9 11 13 8 0 
+2 0 1 3 1 8 15 8 2 0 
+8 0 1 2 1 17 4 3 2 1 
+3 0 7 11 1 12 19 14 1 4 
+
+allocate
+4 0 6 7 0 10 11 4 4 3 
+3 0 2 2 0 7 7 2 2 0 
+3 0 0 1 1 0 1 2 1 1 
+0 0 0 3 0 0 0 0 0 0 
+0 0 0 0 0 0 0 7 1 0 
+1 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+Available resource 
+0 0 0 0 0 0 0 0 1 0 
+
+result: final allocation
+4 0 6 7 0 10 11 4 4 3 
+3 0 2 2 0 7 7 2 2 0 
+3 0 0 1 1 0 1 2 1 1 
+0 0 0 3 0 0 0 0 0 0 
+0 0 0 0 0 0 0 7 1 0 
+1 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+result: remain request
+1 0 0 3 1 4 0 1 3 0 
+1 0 1 8 0 8 8 13 1 1 
+1 0 7 5 0 5 1 9 5 0 
+3 0 0 6 0 9 11 13 8 0 
+2 0 1 3 1 8 15 8 2 0 
+8 0 1 2 1 17 4 3 2 1 
+3 0 7 11 1 12 19 14 1 4 
+
+Deadlocked process: 
+P0 P1 P2 P3 P4 P5 P6 
+The system is in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 10 # of R: 1
+number of resource unit
+1 
+request
+0 
+0 
+0 
+1 
+0 
+0 
+0 
+0 
+0 
+1 
+
+allocate
+0 
+0 
+0 
+0 
+0 
+0 
+1 
+0 
+0 
+0 
+
+Available resource 
+0 
+
+result: final allocation
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+
+result: remain request
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+
+Deadlocked process: 
+none
+Not in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 1 # of R: 8
+number of resource unit
+15 3 11 8 7 12 15 5 
+request
+1 1 0 0 2 1 6 4 
+
+allocate
+13 2 8 6 4 8 9 1 
+
+Available resource 
+2 1 3 2 3 4 6 4 
+
+result: final allocation
+0 0 0 0 0 0 0 0 
+
+result: remain request
+0 0 0 0 0 0 0 0 
+
+Deadlocked process: 
+none
+Not in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 5 # of R: 0
+number of resource unit
+
+request
+
+
+
+
+
+
+allocate
+
+
+
+
+
+
+Available resource 
+
+
+result: final allocation
+
+
+
+
+
+
+result: remain request
+
+
+
+
+
+
+Deadlocked process: 
+none
+Not in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 8 # of R: 1
+number of resource unit
+0 
+request
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+
+allocate
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+
+Available resource 
+0 
+
+result: final allocation
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+
+result: remain request
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+
+Deadlocked process: 
+none
+Not in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 8 # of R: 6
+number of resource unit
+18 17 19 16 15 13 
+request
+11 2 0 6 0 3 
+11 12 4 4 0 5 
+7 0 7 2 2 2 
+3 14 2 12 15 4 
+13 8 15 4 2 11 
+11 10 1 3 7 0 
+5 1 16 2 6 4 
+16 11 7 0 11 9 
+
+allocate
+4 2 6 9 15 2 
+7 2 13 4 0 5 
+2 11 0 0 0 0 
+2 0 0 0 0 3 
+1 1 0 0 0 2 
+2 0 0 0 0 0 
+0 1 0 3 0 0 
+0 0 0 0 0 0 
+
+Available resource 
+0 0 0 0 0 1 
+
+result: final allocation
+4 2 6 9 15 2 
+7 2 13 4 0 5 
+2 11 0 0 0 0 
+2 0 0 0 0 3 
+1 1 0 0 0 2 
+2 0 0 0 0 0 
+0 1 0 3 0 0 
+0 0 0 0 0 0 
+
+result: remain request
+11 2 0 6 0 3 
+11 12 4 4 0 5 
+7 0 7 2 2 2 
+3 14 2 12 15 4 
+13 8 15 4 2 11 
+11 10 1 3 7 0 
+5 1 16 2 6 4 
+16 11 7 0 11 9 
+
+Deadlocked process: 
+P0 P1 P2 P3 P4 P5 P6 P7 
+The system is in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 6 # of R: 9
+number of resource unit
+14 13 10 17 5 17 18 20 2 
+request
+8 5 4 0 3 9 2 4 1 
+1 2 4 9 0 9 0 13 0 
+1 10 2 6 3 0 6 5 1 
+2 3 4 17 3 14 9 4 0 
+7 12 8 6 2 10 17 4 1 
+6 11 9 2 5 11 3 14 1 
+
+allocate
+1 2 0 15 0 8 12 16 0 
+1 9 6 1 4 0 0 2 2 
+2 0 0 0 0 9 5 0 0 
+2 0 0 0 0 0 0 2 0 
+3 0 1 0 1 0 1 0 0 
+1 2 0 0 0 0 0 0 0 
+
+Available resource 
+4 0 3 1 0 0 0 0 0 
+
+result: final allocation
+1 2 0 15 0 8 12 16 0 
+1 9 6 1 4 0 0 2 2 
+2 0 0 0 0 9 5 0 0 
+2 0 0 0 0 0 0 2 0 
+3 0 1 0 1 0 1 0 0 
+1 2 0 0 0 0 0 0 0 
+
+result: remain request
+8 5 4 0 3 9 2 4 1 
+1 2 4 9 0 9 0 13 0 
+1 10 2 6 3 0 6 5 1 
+2 3 4 17 3 14 9 4 0 
+7 12 8 6 2 10 17 4 1 
+6 11 9 2 5 11 3 14 1 
+
+Deadlocked process: 
+P0 P1 P2 P3 P4 P5 
+The system is in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 4 # of R: 5
+number of resource unit
+20 10 8 10 10 
+request
+1 7 1 0 1 
+14 0 3 0 4 
+14 6 3 8 4 
+17 3 5 5 6 
+
+allocate
+18 0 6 7 6 
+1 9 2 0 0 
+0 1 0 2 2 
+0 0 0 1 1 
+
+Available resource 
+1 0 0 0 1 
+
+result: final allocation
+18 0 6 7 6 
+1 9 2 0 0 
+0 1 0 2 2 
+0 0 0 1 1 
+
+result: remain request
+1 7 1 0 1 
+14 0 3 0 4 
+14 6 3 8 4 
+17 3 5 5 6 
+
+Deadlocked process: 
+P0 P1 P2 P3 
+The system is in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 5 # of R: 6
+number of resource unit
+0 16 12 16 0 16 
+request
+0 4 4 2 0 1 
+0 9 11 14 0 0 
+0 12 4 0 0 14 
+0 3 3 3 0 15 
+0 13 5 11 0 6 
+
+allocate
+0 11 8 8 0 12 
+0 4 1 1 0 3 
+0 1 2 1 0 0 
+0 0 1 6 0 1 
+0 0 0 0 0 0 
+
+Available resource 
+0 0 0 0 0 0 
+
+result: final allocation
+0 11 8 8 0 12 
+0 4 1 1 0 3 
+0 1 2 1 0 0 
+0 0 1 6 0 1 
+0 0 0 0 0 0 
+
+result: remain request
+0 4 4 2 0 1 
+0 9 11 14 0 0 
+0 12 4 0 0 14 
+0 3 3 3 0 15 
+0 13 5 11 0 6 
+
+Deadlocked process: 
+P0 P1 P2 P3 P4 
+The system is in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 1 # of R: 9
+number of resource unit
+20 1 7 9 10 15 5 18 14 
+request
+3 1 2 4 3 0 1 0 0 
+
+allocate
+17 0 4 3 5 14 1 15 14 
+
+Available resource 
+3 1 3 6 5 1 4 3 0 
+
+result: final allocation
+0 0 0 0 0 0 0 0 0 
+
+result: remain request
+0 0 0 0 0 0 0 0 0 
+
+Deadlocked process: 
+none
+Not in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 9 # of R: 10
+number of resource unit
+9 3 13 4 15 8 5 6 18 20 
+request
+1 1 6 2 4 2 1 4 11 6 
+0 0 1 2 6 5 2 0 0 10 
+2 3 5 1 10 1 0 4 10 2 
+2 1 4 0 11 3 4 2 8 11 
+9 1 4 0 10 7 0 3 5 6 
+2 2 5 4 11 7 5 4 12 0 
+0 1 2 4 9 2 2 3 9 3 
+9 0 0 1 9 3 3 1 5 14 
+3 2 7 1 8 4 3 1 12 13 
+
+allocate
+0 0 1 2 4 6 3 0 5 8 
+5 3 12 0 8 2 2 5 8 6 
+2 0 0 1 3 0 0 1 2 5 
+1 0 0 1 0 0 0 0 1 1 
+0 0 0 0 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 1 0 
+
+Available resource 
+0 0 0 0 0 0 0 0 1 0 
+
+result: final allocation
+0 0 1 2 4 6 3 0 5 8 
+5 3 12 0 8 2 2 5 8 6 
+2 0 0 1 3 0 0 1 2 5 
+1 0 0 1 0 0 0 0 1 1 
+0 0 0 0 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 1 0 
+
+result: remain request
+1 1 6 2 4 2 1 4 11 6 
+0 0 1 2 6 5 2 0 0 10 
+2 3 5 1 10 1 0 4 10 2 
+2 1 4 0 11 3 4 2 8 11 
+9 1 4 0 10 7 0 3 5 6 
+2 2 5 4 11 7 5 4 12 0 
+0 1 2 4 9 2 2 3 9 3 
+9 0 0 1 9 3 3 1 5 14 
+3 2 7 1 8 4 3 1 12 13 
+
+Deadlocked process: 
+P0 P1 P2 P3 P4 P5 P6 P7 P8 
+The system is in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 0 # of R: 1
+number of resource unit
+1 
+request
+
+allocate
+
+Available resource 
+1 
+
+result: final allocation
+
+result: remain request
+
+Deadlocked process: 
+none
+Not in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 8 # of R: 9
+number of resource unit
+12 15 4 10 8 0 11 15 0 
+request
+2 0 0 0 0 0 6 5 0 
+10 1 1 1 2 0 9 0 0 
+0 3 1 7 0 0 7 0 0 
+2 1 4 7 0 0 6 8 0 
+5 8 0 4 0 0 2 15 0 
+2 2 0 10 1 0 10 11 0 
+9 10 2 3 7 0 7 15 0 
+9 13 3 4 5 0 2 12 0 
+
+allocate
+10 15 0 10 7 0 4 4 0 
+1 0 2 0 0 0 2 10 0 
+0 0 2 0 1 0 4 0 0 
+1 0 0 0 0 0 0 1 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 1 0 0 
+0 0 0 0 0 0 0 0 0 
+
+Available resource 
+0 0 0 0 0 0 0 0 0 
+
+result: final allocation
+10 15 0 10 7 0 4 4 0 
+1 0 2 0 0 0 2 10 0 
+0 0 2 0 1 0 4 0 0 
+1 0 0 0 0 0 0 1 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 1 0 0 
+0 0 0 0 0 0 0 0 0 
+
+result: remain request
+2 0 0 0 0 0 6 5 0 
+10 1 1 1 2 0 9 0 0 
+0 3 1 7 0 0 7 0 0 
+2 1 4 7 0 0 6 8 0 
+5 8 0 4 0 0 2 15 0 
+2 2 0 10 1 0 10 11 0 
+9 10 2 3 7 0 7 15 0 
+9 13 3 4 5 0 2 12 0 
+
+Deadlocked process: 
+P0 P1 P2 P3 P4 P5 P6 P7 
+The system is in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 0 # of R: 4
+number of resource unit
+2 20 2 2 
+request
+
+allocate
+
+Available resource 
+2 20 2 2 
+
+result: final allocation
+
+result: remain request
+
+Deadlocked process: 
+none
+Not in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 2 # of R: 10
+number of resource unit
+14 1 8 14 11 0 7 1 14 15 
+request
+0 0 0 3 0 0 0 0 3 6 
+4 0 4 3 7 0 3 0 9 1 
+
+allocate
+13 0 5 9 6 0 3 1 3 9 
+1 1 1 1 2 0 3 0 4 3 
+
+Available resource 
+0 0 2 4 3 0 1 0 7 3 
+
+result: final allocation
+13 0 5 9 6 0 3 1 3 9 
+1 1 1 1 2 0 3 0 4 3 
+
+result: remain request
+0 0 0 3 0 0 0 0 3 6 
+4 0 4 3 7 0 3 0 9 1 
+
+Deadlocked process: 
+P0 P1 
+The system is in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 7 # of R: 8
+number of resource unit
+10 9 9 18 10 18 2 8 
+request
+0 3 4 5 3 0 1 0 
+1 1 3 15 3 7 0 7 
+2 3 6 12 1 5 0 5 
+4 0 8 0 0 5 1 2 
+0 5 9 7 4 18 0 0 
+10 3 7 6 7 16 1 5 
+1 5 4 6 7 11 1 4 
+
+allocate
+10 3 4 10 6 17 0 8 
+0 4 5 1 3 0 1 0 
+0 0 0 3 1 0 0 0 
+0 2 0 0 0 0 1 0 
+0 0 0 1 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 1 0 1 0 0 
+
+Available resource 
+0 0 0 2 0 0 0 0 
+
+result: final allocation
+10 3 4 10 6 17 0 8 
+0 4 5 1 3 0 1 0 
+0 0 0 3 1 0 0 0 
+0 2 0 0 0 0 1 0 
+0 0 0 1 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 1 0 1 0 0 
+
+result: remain request
+0 3 4 5 3 0 1 0 
+1 1 3 15 3 7 0 7 
+2 3 6 12 1 5 0 5 
+4 0 8 0 0 5 1 2 
+0 5 9 7 4 18 0 0 
+10 3 7 6 7 16 1 5 
+1 5 4 6 7 11 1 4 
+
+Deadlocked process: 
+P0 P1 P2 P3 P4 P5 P6 
+The system is in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 3 # of R: 8
+number of resource unit
+2 15 12 15 12 1 2 16 
+request
+0 1 1 7 2 1 0 0 
+0 3 8 1 2 0 0 9 
+0 0 2 4 11 0 2 14 
+
+allocate
+0 12 7 8 4 0 0 16 
+2 1 0 2 5 1 2 0 
+0 1 1 4 0 0 0 0 
+
+Available resource 
+0 1 4 1 3 0 0 0 
+
+result: final allocation
+0 12 7 8 4 0 0 16 
+2 1 0 2 5 1 2 0 
+0 1 1 4 0 0 0 0 
+
+result: remain request
+0 1 1 7 2 1 0 0 
+0 3 8 1 2 0 0 9 
+0 0 2 4 11 0 2 14 
+
+Deadlocked process: 
+P0 P1 P2 
+The system is in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 8 # of R: 1
+number of resource unit
+10 
+request
+2 
+2 
+5 
+3 
+4 
+3 
+5 
+1 
+
+allocate
+5 
+3 
+0 
+1 
+1 
+0 
+0 
+0 
+
+Available resource 
+0 
+
+result: final allocation
+5 
+3 
+0 
+1 
+1 
+0 
+0 
+0 
+
+result: remain request
+2 
+2 
+5 
+3 
+4 
+3 
+5 
+1 
+
+Deadlocked process: 
+P0 P1 P2 P3 P4 P5 P6 P7 
+The system is in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 9 # of R: 9
+number of resource unit
+0 4 2 14 4 13 14 7 19 
+request
+0 0 0 1 0 1 2 2 0 
+0 2 2 8 4 1 5 3 8 
+0 4 0 8 2 2 6 2 7 
+0 1 0 4 0 5 13 2 5 
+0 2 0 1 1 10 3 1 10 
+0 3 0 9 3 7 1 7 7 
+0 3 0 8 0 6 11 5 3 
+0 1 1 14 0 11 12 6 13 
+0 1 1 6 3 6 10 2 11 
+
+allocate
+0 2 0 4 4 6 7 2 19 
+0 0 0 0 0 0 7 1 0 
+0 0 0 6 0 5 0 3 0 
+0 0 0 3 0 0 0 1 0 
+0 2 0 1 0 0 0 0 0 
+0 0 1 0 0 2 0 0 0 
+0 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+
+Available resource 
+0 0 0 0 0 0 0 0 0 
+
+result: final allocation
+0 2 0 4 4 6 7 2 19 
+0 0 0 0 0 0 7 1 0 
+0 0 0 6 0 5 0 3 0 
+0 0 0 3 0 0 0 1 0 
+0 2 0 1 0 0 0 0 0 
+0 0 1 0 0 2 0 0 0 
+0 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+
+result: remain request
+0 0 0 1 0 1 2 2 0 
+0 2 2 8 4 1 5 3 8 
+0 4 0 8 2 2 6 2 7 
+0 1 0 4 0 5 13 2 5 
+0 2 0 1 1 10 3 1 10 
+0 3 0 9 3 7 1 7 7 
+0 3 0 8 0 6 11 5 3 
+0 1 1 14 0 11 12 6 13 
+0 1 1 6 3 6 10 2 11 
+
+Deadlocked process: 
+P0 P1 P2 P3 P4 P5 P6 P7 P8 
+The system is in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ ./main
+# of P: 6 # of R: 9
+number of resource unit
+9 20 0 8 12 9 0 15 12 
+request
+3 1 0 0 12 3 0 1 2 
+0 8 0 6 0 0 0 3 2 
+4 6 0 0 0 4 0 5 2 
+8 18 0 0 0 6 0 10 6 
+2 14 0 5 7 6 0 12 8 
+4 9 0 2 6 3 0 8 2 
+
+allocate
+3 19 0 8 0 4 0 7 3 
+1 1 0 0 11 0 0 3 0 
+5 0 0 0 0 1 0 0 9 
+0 0 0 0 1 3 0 4 0 
+0 0 0 0 0 1 0 1 0 
+0 0 0 0 0 0 0 0 0 
+
+Available resource 
+0 0 0 0 0 0 0 0 0 
+
+result: final allocation
+3 19 0 8 0 4 0 7 3 
+1 1 0 0 11 0 0 3 0 
+5 0 0 0 0 1 0 0 9 
+0 0 0 0 1 3 0 4 0 
+0 0 0 0 0 1 0 1 0 
+0 0 0 0 0 0 0 0 0 
+
+result: remain request
+3 1 0 0 12 3 0 1 2 
+0 8 0 6 0 0 0 3 2 
+4 6 0 0 0 4 0 5 2 
+8 18 0 0 0 6 0 10 6 
+2 14 0 5 7 6 0 12 8 
+4 9 0 2 6 3 0 8 2 
+
+Deadlocked process: 
+P0 P1 P2 P3 P4 P5 
+The system is in Deadlock state
+dw@dw-VirtualBox:/media/sf_2020/운영체제/HW2/OS_proj2$ 
+
